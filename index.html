@@ -7,12 +7,75 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Project Health Simulation</h1>
-    </header>
-    <main>
-        
-    </main>
+    <section id="intro-section">
+        <div id="intro-title">
+            <h1>Project BMI Calculator</h1>
+        </div>
+
+        <div id="intro-paragraph">
+            <p>
+                This application calculates the Body Mass Index (BMI), a measure based on two variables: weight and height.
+                By entering your data, you can quickly see your BMI value and understand the category you fit into, giving
+                you a simple way to learn more about your overall health. Keep in mind that the interpretation of BMI can
+                vary depending on age, since health standards change as we get older.
+            </p>
+        </div>
+    </section>
+    
+    <section id="health-form-section">
+        <form id="health-form">
+            <div id="health-form-input">
+                <div class="health-form-row">
+                    <div class="health-form-container">
+                        <div class="health-form-container-label">
+                            <label for="name">Name:</label>
+                        </div>
+                        <div class="health-form-container-cell">
+                            <input type="text" name="name" placeholder="name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="health-form-row">
+                    <div class="health-form-container">
+                        <div class="health-form-container-label">
+                            <label for="name">Age:</label>
+                        </div>
+                        <div class="health-form-container-cell">
+                            <input type="text" name="age" placeholder="age">
+                        </div>
+                    </div>
+
+                    <div class="health-form-container">
+                        <div class="health-form-container-label">
+                            <label for="name">Height:</label>
+                        </div>
+                        <div class="health-form-container-cell">
+                            <input type="text" name="height" placeholder="height">
+                        </div>
+                    </div>
+
+                    <div class="health-form-container">
+                        <div class="health-form-container-label">
+                            <label for="name">Weight:</label>
+                        </div>
+                        <div class="health-form-container-cell">
+                            <input type="text" name="weight" placeholder="weight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="health-form-submit">
+                <button type="submit">Result</button>
+            </div>
+        </form>
+    </section>
+    
+    <section id="result-section">
+
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
