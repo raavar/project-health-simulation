@@ -1,11 +1,109 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    height: auto;
-    color: black;
+    box-sizing: border-box; /*border-box latimea si intaltimea includ continut+padding+border */
 }
 
 body {
-    background-color: azure;
+    font-family: 'Inter',Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    color:#333333;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#intro-title {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+#intro-section p {
+    line-height: 1.5;
+    text-align: justify ;
+    color: #444;
+}
+
+#health-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#health-form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.health-form-row {
+    display: flex;
+}
+
+.health-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.health-form-container label {
+    font-weight: 600;
+}
+
+.health-form-container-cell {
+    outline: none;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    position: relative;
+    display: inline-block;
+}
+
+.health-form-container-cell p {
+    position: absolute;
+    right: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.health-form-container-cell input {
+    height: 30px;
+    font-size: large;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#health-form-submit {
+    display: flex;
+    justify-content: center;
+}
+
+#health-form-submit button {
+  padding: 12px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border:none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+#health-form-submit button:hover {
+  background-color: #388E3C;
+  font-family: 'Inter';
 }

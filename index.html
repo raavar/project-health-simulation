@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Health Simulation</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+
 </head>
 <body>
     <section id="intro-section">
@@ -27,40 +29,34 @@
             <div id="health-form-input">
                 <div class="health-form-row">
                     <div class="health-form-container">
-                        <div class="health-form-container-label">
-                            <label for="name">Name:</label>
-                        </div>
+                        <label for="name">Name:</label>
                         <div class="health-form-container-cell">
-                            <input type="text" name="name" placeholder="name">
+                            <input type="text" name="name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="health-form-container">
+                        <label for="name">Age:</label>
+                        <div class="health-form-container-cell">
+                            <input type="number" min="0" name="age" required>
                         </div>
                     </div>
                 </div>
 
                 <div class="health-form-row">
                     <div class="health-form-container">
-                        <div class="health-form-container-label">
-                            <label for="name">Age:</label>
-                        </div>
+                        <label for="name">Height:</label>
                         <div class="health-form-container-cell">
-                            <input type="text" name="age" placeholder="age">
+                            <input type="number" min="0" name="height" required>
+                            <p>cm</p>
                         </div>
                     </div>
 
                     <div class="health-form-container">
-                        <div class="health-form-container-label">
-                            <label for="name">Height:</label>
-                        </div>
+                        <label for="name">Weight:</label>
                         <div class="health-form-container-cell">
-                            <input type="text" name="height" placeholder="height">
-                        </div>
-                    </div>
-
-                    <div class="health-form-container">
-                        <div class="health-form-container-label">
-                            <label for="name">Weight:</label>
-                        </div>
-                        <div class="health-form-container-cell">
-                            <input type="text" name="weight" placeholder="weight">
+                            <input type="number" min="0" name="weight" required>
+                            <p>kg</p>
                         </div>
                     </div>
                 </div>
