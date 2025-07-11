@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /*border-box latimea si intaltimea includ continut+padding+border */
@@ -8,7 +8,7 @@ body {
     font-family: 'Inter',Arial, sans-serif;
     background-color: #f2f2f2;
     padding: 20px;
-    color:#333333; /*culoare text */
+    color:#333333;
 }
 
 section {
@@ -38,28 +38,59 @@ section {
     gap: 20px;
 }
 
-.health-form-row {
+#health-form-input {
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    gap: 25px;
 }
 
+.health-form-row {
+    display: flex;
+}
 
 .health-form-container {
     flex: 1;
-    min-width: 150px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
 }
 
-.health-form-container-label label {
+.health-form-container label {
     font-weight: 600;
-    margin-bottom: 8px;
-    color: #2c2b2b;
 }
+
+.health-form-container-cell {
+    outline: none;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    position: relative;
+    display: inline-block;
+}
+
+.health-form-container-cell p {
+    position: absolute;
+    right: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.health-form-container-cell input {
+    height: 30px;
+    font-size: large;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
 #health-form-submit {
     display: flex;
     justify-content: center;
 }
+
 #health-form-submit button {
   padding: 12px 30px;
   background-color: #4CAF50;
