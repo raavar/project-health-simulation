@@ -1,11 +1,78 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    height: auto;
-    color: black;
+    box-sizing: border-box; /*border-box latimea si intaltimea includ continut+padding+border */
 }
 
 body {
-    background-color: azure;
+    font-family: 'Inter',Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    color:#333333; /*culoare text */
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#intro-title {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+#intro-section p {
+    line-height: 1.5;
+    text-align: justify ;
+    color: #444;
+}
+
+#health-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.health-form-row {
+    display: flex;
+    text-align: center;
+}
+
+
+.health-form-container {
+    flex: 1;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.health-form-container-label label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c2b2b;
+}
+#health-form-submit {
+    display: flex;
+    justify-content: center;
+}
+#health-form-submit button {
+  padding: 12px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border:none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+#health-form-submit button:hover {
+  background-color: #388E3C;
+  font-family: 'Inter';
 }
