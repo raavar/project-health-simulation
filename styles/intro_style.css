@@ -1,0 +1,11 @@
+#intro-title {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+#intro-section p {
+    line-height: 1.5;
+    text-align: justify ;
+    color: #444;
+}

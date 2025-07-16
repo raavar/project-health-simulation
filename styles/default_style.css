@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*border-box latimea si intaltimea includ continut+padding+border */
+}
+
+body {
+    font-family: 'Inter',Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    color:#333333;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
