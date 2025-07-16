@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Health Simulation</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/default_style.css">
+    <link rel="stylesheet" href="styles/intro_style.css">
+    <link rel="stylesheet" href="styles/health_form_style.css">
+    <link rel="stylesheet" href="styles/result_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
 
 </head>
@@ -68,8 +71,13 @@
         </form>
     </section>
     
-    <section id="result-section">
+    <section id="result-section" style="display: none;">
+        <p>These are the results:</p>
+        <div id="personal-result"></div>
+    </section>
 
+    <section id="info-section">
+        <h1>Info about BMI Calculator</h1>
     </section>
 
     <script src="script.js"></script>
